@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.containerFondo{
+.containerFondo {
     background-image: url(https://i.pinimg.com/564x/06/a5/e5/06a5e5ae113f8ae8b6b0b8e35c01dcec.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,33 +17,33 @@
     margin-bottom: 40px;
 }
 
-.containerFondo .bienvenida{
+.containerFondo .bienvenida {
     margin-top: 80px;
     margin-bottom: 60px;
-   font-size: 16px;
-   text-transform: uppercase;
-   letter-spacing: 5px;
-   color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
 }
 
-.containerFondo h2{
+.containerFondo h2 {
     height: 100px;
     color: white;
     font-weight: bold;
 
 }
 
-main div h2 span{
+main div h2 span {
     font-size: 30px;
     color: pink;
 }
 
-.containerFondo .descripcion{
+.containerFondo .descripcion {
     font-size: 18px;
     color: white;
 }
 
-.containerFondo a{
+.containerFondo a {
     color: white;
     border: 2px solid white;
     font-weight: bold;
@@ -53,7 +53,7 @@ main div h2 span{
 
 }
 
-header .navbar{
+header .navbar {
     background-color: rgba(0, 0, 0, 0.8)
 }
 
@@ -61,27 +61,27 @@ header .navbar{
     margin-bottom: 40px;
 }
 
-.imgmia{
-    
+.imgmia {
+
     border-radius: 20px;
 }
 
-ul li a{
+ul li a {
     color: white !important;
 }
 
-.fleximgmia{
+.fleximgmia {
     display: flex;
     justify-content: center;
     margin: 20px 0px;
 }
 
-.descripcionSobremi{
+.descripcionSobremi {
     display: flex;
     align-items: center;
 }
 
-.section1 .descripcionSobremi a{
+.section1 .descripcionSobremi a {
     display: inline-block;
     border: 2px solid black;
     color: black;
@@ -89,38 +89,40 @@ ul li a{
     padding: 10px 20px;
     margin-top: 30px;
     margin-left: 280px;
-    
+
     /* aca nose si esta bien lo que hice, movi el boton demasiado con el margin left porque no me dejaba hacerlo de otra menra */
 }
 
-h3{
+h3 {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.flexCard{
+.flexCard {
     display: flex;
     justify-content: space-around;
 }
-.iconoCodigo{
+
+.iconoCodigo {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: #d3d3d3;
     padding: 20px
-    /* el icono lo puse yo por mi cuenta en font awesome pero los atributos los copie del icono de lis y le agregue por mi cuenta flex para poder posicionarlo */
+        /* el icono lo puse yo por mi cuenta en font awesome pero los atributos los copie del icono de lis y le agregue por mi cuenta flex para poder posicionarlo */
 }
-.flexIcono{
+
+.flexIcono {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.section2{
+.section2 {
     margin-bottom: 40px;
 }
 
-.banner2{
+.banner2 {
     background-image: url(../img/fondo3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -131,36 +133,36 @@ h3{
     background-attachment: fixed;
 }
 
-.banner2 .section2 h3{
+.banner2 .section2 h3 {
     color: white;
     padding: 30px;
 }
 
-.section3 h6{
+.section3 h6 {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.flexProyecto{
+.flexProyecto {
     display: flex;
     justify-content: space-around;
 }
 
-.section3{
+.section3 {
     margin-bottom: 70px;
 }
 
-.section4 h2{
+.section4 h2 {
     text-align: center;
 }
 
-.flexEnviar{
+.flexEnviar {
     display: flex;
     justify-content: space-around;
     margin-bottom: 40px;
 }
 
-.footer{
+.footer {
     background-color: black;
     display: flex;
     justify-content: center;
@@ -169,7 +171,7 @@ h3{
 
 }
 
-footer p{
+footer p {
     color: white;
     background-color: black;
     margin-bottom: 0;
@@ -179,18 +181,237 @@ footer p{
     align-items: center;
 }
 
-.fa-brands{
+.fa-brands {
     font-size: x-large;
 }
 
-footer a{
+footer a {
     margin: 8px;
 }
 
-/* MQ CELULAR */
+/* MQ TABLET */
 
-@media screen and (max-width: 600px) {
-    body {
-      /* APRENDER COMO ES BIEN MQ, COMO APLICARLO */
+@media screen and (min-width:468px) and (max-width:768px) {
+
+    .containerFondo {
+        background-image: url(../img/bannertablet.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
     }
-  }
+
+    .containerFondo .bienvenida {
+        margin-top: 80px;
+        margin-bottom: 60px;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: black;
+    }
+
+    .containerFondo h2 {
+        height: 100px;
+        color: black;
+        font-weight: bold;
+
+    }
+
+    main div h2 span {
+        font-size: 30px;
+        color: blueviolet;
+    }
+
+    header .navbar {
+        background-color: blueviolet
+    }
+
+    .containerFondo a {
+        color: black;
+        border: 2px solid black;
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: 60px;
+        padding: 20px 25px;
+
+    }
+
+    .containerFondo .descripcion {
+        font-size: 18px;
+        color: black;
+    }
+
+    ul li a {
+        color: black !important;
+    }
+
+    .iconoCodigo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: blueviolet;
+        padding: 20px;
+    }
+
+    .banner2 {
+        background-image: url(../img/banertablet2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 100%;
+        height: 60vh;
+        margin-bottom: 40px;
+        background-attachment: fixed;
+    }
+
+    .footer {
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+
+    }
+
+    footer p {
+        color: white;
+        background-color: blueviolet;
+        margin-bottom: 0;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section4 {
+        background-color: lightpink;
+    }
+}
+
+/* MQ PHONE */
+@media screen and (max-width:467px) {
+
+    .containerFondo {
+        background-image: url(../img/bannercelular.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .containerFondo .bienvenida {
+        margin-top: 80px;
+        margin-bottom: 60px;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: greenyellow;
+    }
+
+    .containerFondo h2 {
+        height: 100px;
+        color: green;
+        font-weight: bold;
+
+    }
+
+    main div h2 span {
+        font-size: 30px;
+        color: greenyellow;
+    }
+
+    header .navbar {
+        background-color: greenyellow
+    }
+
+    .containerFondo a {
+        color: green;
+        border: 2px solid black;
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: 60px;
+        padding: 20px 25px;
+
+    }
+
+    .containerFondo .descripcion {
+        font-size: 18px;
+        color: green;
+    }
+
+    ul li a {
+        color: black !important;
+    }
+
+    .iconoCodigo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: green;
+        padding: 20px;
+    }
+
+    .banner2 {
+        background-image: url(../img/banner2celular.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 100%;
+        height: 60vh;
+        margin-bottom: 40px;
+        background-attachment: fixed;
+    }
+
+    .footer {
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+
+    }
+
+    footer p {
+        color: white;
+        background-color: greenyellow;
+        margin-bottom: 0;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section4 {
+        background-color: greenyellow;
+    }
+
+}
+  
+
+/* ahora tendria que ver porque se me pisan horizonalmente las secciones, de 461px para abajo se me pisan, en este caso como lo modifico  porque no agarra solo celular sino que tablet tambien, pero nose simodificar todo entero de tablet. quiero nuevamente sacarle el fondo al logo pero ahora no me lo permite la pagina q usaba y no recuerdo cual usaba lichu*/
+/* preguntarke a ella que cree q debo modificar 
+como sacar ese color secundario que tiene la pagina,que es azul en este caso. 
+ver como mejorar mi linkedin sobre css y html
+animacionses transformaciones y transiciones, sass, servidores y seo, inludes y miexes*/
+
+
+/* FORMULARIO MANUAL  */
+
+.formularioManual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+

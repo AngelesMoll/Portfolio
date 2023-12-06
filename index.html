@@ -62,7 +62,7 @@
             <a href="#misproyectos">IR A MIS PROYECTOS</a>
         </div>
         <!-- sobre mi  -->
-        <section id="quiensoy" class="container-fluid section1">
+        <!-- <section id="quiensoy" class="container-fluid section1">
             <div class="row border">
                 <div class="col-5 fleximgmia">
                     <img class="imgmia" src="./img/fotomiafondo1.png" alt="fotoam">
@@ -83,7 +83,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- conocimientos -->
         <!-- ponerle fondo a conocimientos (fondo movedizo) -->
@@ -190,10 +190,12 @@
 
         <!-- seccion contacto -->
         <!-- en esta seccion copie el codigo de chatgpt que en verdad es de boostrap, solo que en boostrap no lo encontre -->
+       ESTE FORMULARIO LO HICE CON BOOSTRAP PERO LO MODIFIQUE MANUALEMNTE CON CLASES DE css
+       
         <section class="section4">
             <div class="container mt-5">
                 <h2>CONTACTAME</h2>
-                <form>
+                <form action="http://127.0.0.1:5500/index.html">
 
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre:</label>
@@ -216,6 +218,48 @@
                 </form>
             </div>
         </section>
+
+        ESTE FORMULARIO LO HICE A MANO
+        <section>
+        <form action="http://127.0.0.1:5500/index.html" method="get" class="formularioManual">
+            <!-- no termino de entender bien, cual es el link que deberia poner el action. -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ingrese tu nombre">
+
+            <label for="email">Correo electronico:</label>
+            <input type="email" id="email" name="email" required placeholder="Ingrese su email">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" required placeholder="ingrese su mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    ESTE FORM LO HICE CON BOOSTRAP Y LE PUSE CLASES DE BOOSTRAP
+    <section>
+        <div class="container bg-warning-subtle border border-warning border-4 mb-3">
+        <form action="http://127.0.0.1:5500/index.html?#">
+            <div class="mb-3 mt-3">
+                <label for="Nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="Nombre" placeholder="Escriba su nombre">
+              </div>
+              <div class="mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="Email" placeholder="Escriba su email">
+              </div>
+              <div class="mb-3">
+                <label for="Mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="Mensaje" rows="3" placeholder="Escriba su mensaje"></textarea>
+              </div>
+              <div class="col-12 mb-3 text-center">
+                <button type="submit" class="btn btn-warning">Enviar</button>
+              </div>
+        </form>
+    </div>
+    
+    </section>
+    
     </main>
     <footer>
         <p>Todos los derechos reservados - 2023</p>
